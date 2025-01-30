@@ -1,0 +1,19 @@
+#js{
+    background-image: url("https://wallpaperaccess.com/full/3239480.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size:cover;
+    display: flex; 
+    justify-content: center;
+    border: 10px solid rgb(65, 64, 64);
+}
+@media (max-width: 768px) {
+  
+    #js{
+     font-size: 10px;
+    }
+    
+    h1{
+        font-size: 20px;
+    }
+ }

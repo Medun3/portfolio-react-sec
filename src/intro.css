@@ -1,0 +1,41 @@
+.container-intro{
+    background-image: url('https://wallpaperaccess.com/full/4230797.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    border: 10px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.intro-title{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+.intro-title {
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    font-family: "Pacifico", cursive;
+    font-size: 0.9rem;
+    color: whitesmoke;
+    flex-wrap: nowrap;
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.6; 
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  
+    .intro-title {
+        font-size: 0.5rem;
+      
+    }
+}
+
+/* Media query for very small screens (like mobile phones) */
+@media (max-width: 480px) {
+ 
+}

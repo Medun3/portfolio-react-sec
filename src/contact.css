@@ -1,0 +1,96 @@
+#container-contact {
+  background-image: url("https://www.pdsvehicleinspections.com.au/wp-content/uploads/2015/09/contact_us_background.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  border: 10px solid rgb(77, 75, 75);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgb(44, 181, 181);
+}
+
+.header h1 {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  left: 15%;
+  bottom: 40%;
+  font-size: 40px;
+  padding-left: 10px;
+  animation: contact 5s ease-in-out forwards;
+  letter-spacing: 20px;
+}
+
+@keyframes contact {
+  0% {
+    bottom: 100;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 70%;
+    opacity: 0;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: justify;
+  color: rgb(170, 185, 185);
+  justify-content: center;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  padding: 40px 50px;
+  border-radius: 20px;
+  background-color: transparent;
+  transform-origin: center;
+  border-radius: 9999px;
+}
+
+.details h4 {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  color: #c1b3b3;
+}
+
+@media only screen and (max-width: 600px) {
+  .details {
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    padding: 30px;
+  }
+  .details h4 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  
+  .details h4{
+   font-size:12px;
+  }
+  .details{
+    display: flex;
+   flex-direction: column;
+   align-content:start;
+   justify-content: center;
+  }
+  
+  .header h1{
+      font-size: 24px;
+  }
+}

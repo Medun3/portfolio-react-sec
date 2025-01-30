@@ -1,0 +1,25 @@
+#py{
+    background-image: url("https://wallpaperaccess.com/full/3239480.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size:contain;
+    display: flex; 
+    justify-content: center;
+    border: 10px solid rgb(65, 64, 64);
+}
+.button-html{
+    border-radius: 30px;
+    padding: 5px 30px;
+    color: rgb(196, 175, 149);
+}
+@media (max-width: 768px) {
+  
+    #py{
+     font-size: 5px;
+     background-size:cover;
+    }
+    
+    h1{
+        font-size: 20px;
+    }
+ }
