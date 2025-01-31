@@ -62,7 +62,7 @@ With a Bachelor’s degree in Information Technology and an MBA from reputed ins
 
 Outside of work, Medun is passionate about exploring technologys potential to improve everyday lives. He believes that every project is an opportunity to grow and make an impact.
 
-"speed={10}/>
+"speed={100}/>
 <div>
   <button onClick={ContactClickHere} style={buttonStyles} >back</button>
   </div>
