@@ -1,6 +1,6 @@
 import React from 'react'
 import './Credentials.css'
-import { useNavigate } from "react-router-dom";
+import { useNavigate ,Link } from "react-router-dom";
 
 function Credentials() {
   const navigate = useNavigate();
@@ -9,35 +9,6 @@ function Credentials() {
     navigate("/"); // Navigate to the "Home" route
   };
 
-  const HtmlClickHere = () => {
-    navigate("/Html"); // Navigate to the "Home" route
-  };
-
-  const JavaSriptClickHere = () => {
-    navigate("/Javascript"); 
-  };
-  const ReactClickHere =() => {
-    navigate("/ReactJS")
-  }
-  
-  const NodeClickHere = () => {
-    navigate("/Node"); 
-  };
-  const ExpressClickHere = () => {
-    navigate("/Express"); 
-  };
-  const MongoDBClickHere = () => {
-    navigate("/MongoDB"); 
-  };
-  const GitClickHere = () => {
-    navigate("/Git"); 
-  };
-  const CClickHere = () => {
-    navigate("/C"); 
-  };
-  const OtherClickHere = () => {
-    navigate("/Other"); 
-  };
   const buttonStyles = {
     color: "rgb(170, 174, 174)",
     cursor: "pointer",
@@ -62,7 +33,7 @@ function Credentials() {
               <h1>HTML & CSS</h1> </div>
             <div className='content'>
               <h2>Certification and details </h2>
-              <p onClick={HtmlClickHere}>Click Here</p>
+             <Link to='/Html'> <p>Click Here</p> </Link>
             </div>
           </div>
 
@@ -71,7 +42,7 @@ function Credentials() {
               <h1>JavaScript</h1> </div>
             <div className='content'>
               <h2>Certification and details </h2>
-              <p onClick={JavaSriptClickHere}>Click Here</p>
+             <Link to='/Javascript'> <p>Click Here</p></Link>
             </div>
           </div>
           <div className='card'>
@@ -79,7 +50,7 @@ function Credentials() {
               <h1>React JS</h1> </div>
             <div className='content'>
               <h2>Certification and details </h2>
-              <p onClick={ReactClickHere}>Click Here</p>
+              <Link to='/ReactJS'><p>Click Here</p></Link>
             </div>
           </div>
 
@@ -88,7 +59,7 @@ function Credentials() {
               <h1>Node JS</h1> </div>
             <div className='content'>
               <h2>Certification and details </h2>
-              <p onClick={NodeClickHere}>Click Here</p>
+              <Link to='/Node'><p>Click Here</p></Link>
             </div>
           </div>
 
@@ -97,7 +68,7 @@ function Credentials() {
               <h1>Express JS</h1> </div>
             <div className='content'>
               <h2>Certification and details </h2>
-              <p onClick={ExpressClickHere}>Click Here</p>
+              <Link to='/Express'><p>Click Here</p></Link>
             </div>
           </div>
 
@@ -106,7 +77,7 @@ function Credentials() {
               <h1>Mongo DB</h1> </div>
             <div className='content'>
               <h2>Certification and details </h2>
-              <p onClick={MongoDBClickHere}>Click Here</p>
+              <Link to='/MongoDB'><p>Click Here</p></Link>
             </div>
           </div>
 
@@ -115,7 +86,7 @@ function Credentials() {
               <h1>Git & GitHub</h1> </div>
             <div className='content'>
               <h2>Certification and details </h2>
-              <p onClick={GitClickHere}>Click Here</p>
+              <Link to='Git'><p>Click Here</p></Link>
             </div>
           </div>
 
@@ -123,7 +94,7 @@ function Credentials() {
             <div className='box-container'><h1>C & CPP</h1></div>
             <div className='content'>
               <h2>Certification and details </h2>
-              <p onClick={CClickHere}>Click Here.</p>
+              <Link to='/C'><p>Click Here.</p></Link>
             </div>
           </div>
           <div className='card'>
@@ -131,7 +102,7 @@ function Credentials() {
               <h1>Skills More</h1> </div>
             <div className='content'>
               <h2>Certification and details </h2>
-              <p onClick={OtherClickHere}>Click Here</p>
+              <Link to='/Other'><p>Click Here</p></Link>
             </div>
           </div>
         </div>
