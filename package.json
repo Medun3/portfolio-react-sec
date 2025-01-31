@@ -2,7 +2,7 @@
   "name": "my-react-app",
 
   // add
-  "homepage": "https://your-username.github.io/your-repository",
+  "homepage": "https://medun3.github.io/portfolio-react-sec/",
 
   "private": true,
   "version": "0.0.0",
@@ -12,7 +12,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    
+
     // add
      "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
