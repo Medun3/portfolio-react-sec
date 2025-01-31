@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter as HashRouter,Router, Routes, Route, Link } from "react-router-dom"
+import {  HashRouter as Routes, Route, Link } from "react-router-dom"
 import App from './App.jsx'
 import Intro from "./intro.jsx"
 import Credentials from './Credentials.jsx'
@@ -19,23 +19,26 @@ import C from './credentailsFile/c.jsx'
 
 
 createRoot(document.getElementById('root')).render(
-  <HashRouter>    <Routes>
-      <Route path ="/" element={<App />} />
-      <Route path ="/introduction" element={<Intro/>} />
-      <Route path ="/Credentials" element ={<Credentials/>} />
-      <Route path ="/Project" element ={<Project/>} />
-      <Route path ="/Contact" element ={<Contact/> } />
-      <Route path ="/Html"  element ={<Html/>} />
-      <Route path ="/Other"  element ={<Other/>}/>
-      <Route path ="/Javascript"  element ={<Javascript/>}/>
-      <Route path ="/ReactJS" element ={<ReactJS/>}/>
-      <Route path ="/Node"  element ={<Node/>}/>
-      <Route path ="/Express"  element ={<Express/>}/>
-      <Route path ="/MongoDB"  element ={<MongoDB/>}/>
-      <Route path ="/Git"  element ={<Git/>}/>
-      <Route path ="/C"  element ={<C/>}/>
-           
-    </Routes>
+  <StrictMode>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/introduction" element={<Intro />} />
+        <Route path="/Credentials" element={<Credentials />} />
+        <Route path="/Project" element={<Project />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Html" element={<Html />} />
+        <Route path="/Other" element={<Other />} />
+        <Route path="/Javascript" element={<Javascript />} />
+        <Route path="/ReactJS" element={<ReactJS />} />
+        <Route path="/Node" element={<Node />} />
+        <Route path="/Express" element={<Express />} />
+        <Route path="/MongoDB" element={<MongoDB />} />
+        <Route path="/Git" element={<Git />} />
+        <Route path="/C" element={<C />} />
+
+      </Routes>
     </HashRouter>
+  </StrictMode>
 
 )
