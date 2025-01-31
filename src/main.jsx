@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter as HashRouter,Router, Routes, Route, Link } from "react-router-dom"
 import App from './App.jsx'
 import Intro from "./intro.jsx"
 import Credentials from './Credentials.jsx'
@@ -19,8 +19,7 @@ import C from './credentailsFile/c.jsx'
 
 
 createRoot(document.getElementById('root')).render(
-  <Router>
-    <Routes>
+  <HashRouter>    <Routes>
       <Route path ="/" element={<App />} />
       <Route path ="/introduction" element={<Intro/>} />
       <Route path ="/Credentials" element ={<Credentials/>} />
@@ -37,5 +36,6 @@ createRoot(document.getElementById('root')).render(
       <Route path ="/C"  element ={<C/>}/>
            
     </Routes>
-  </Router>
+    </HashRouter>
+
 )
