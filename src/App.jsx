@@ -33,7 +33,7 @@ function App() {
     color: "yellow",
   };
   return (
-    <>
+    <> 
       <div className='container-app'>
         <div className=" navbar box-top d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
           <div id="top-logo">
@@ -42,19 +42,30 @@ function App() {
               <span className="portfolio">Portfolio</span>
             </a>
           </div>
-          <nav className=" d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <a className="headline" href="/Credentials">
-              Credentials and Skills
-            </a>
+          <nav className=" d-inline-flex mt-2 mt-md-0 ms-md-auto  ">
+
+            <Link to="/Credentials" className='text-decoration-none'>
+              <a className="headline" href="/Credentials">
+                Credentials and Skills
+              </a>
+            </Link>
+
             {/* <a className="headline" href="#skills">
               
             </a> */}
+
+            <Link to="/Project"className='text-decoration-none'>
             <a className="headline" href="/Project">
               Project
             </a>
+            </Link>
+
+            <Link to="/Contact" className='text-decoration-none'>
             <a className="headline" href="/Contact">
               Contact
             </a>
+            </Link>
+
           </nav>
         </div>
         <div className='titleName'>
@@ -65,18 +76,18 @@ function App() {
             </div>
           </div>
           <div className='link-introduction'>
-          <Link to="/introduction" className='text-decoration-none'>
-            <button className="button">
-              <div className="dots_border"></div>
-              <span className="text_button">learn more</span>
-            </button>
-          </Link>
+            <Link to="/introduction" className='text-decoration-none'>
+              <button className="button">
+                <div className="dots_border"></div>
+                <span className="text_button">learn more</span>
+              </button>
+            </Link>
           </div>
-           <div id="myImage"><img src={image} alt="" />
-            
+          <div id="myImage"><img src={image} alt="" />
+
+          </div>
+          <div className='page-detail'></div>
         </div>
-        <div className='page-detail'></div>
-          </div>
       </div>
     </>
   )
